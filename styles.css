@@ -10,29 +10,67 @@
 @media screen and (max-width: 768px) {
 
     .principal {
-        /* Deixa a altura livre para o conteúdo crescer verticalmente */
         height: auto;
-        /* Dá um respiro nas bordas laterais */
         padding: 2em;
-        /* Garante que os itens fiquem um abaixo do outro */
         flex-direction: column;
     }
 
-    .container__titulo {
-        /* Diminui o título para não quebrar muitas linhas */
-        font-size: 28px;
+    .container {
+        grid-template-columns: 1fr;
+        height: auto;
     }
 
-    .container__botao {
-        /* Faz o botão ocupar toda a largura da tela do celular */
+    .container_titulo {
+        font-size: 24px;
+    }
+
+    .container_caixa {
+        margin: 0;
+    }
+
+    .container_botao {
         width: 100%;
+        box-sizing: border-box;
+        text-align: center;
         margin-bottom: 1em;
     }
 
-    .container__imagem {
-        /* Garante que a imagem não "vaze" para fora da tela */
+    .container_imagem {
         width: 100%;
         height: auto;
+    }
+
+    .secundario {
+        margin: 0 2em;
+    }
+
+    .secundario_imagem {
+        width: 100%;
+    }
+
+    .descricao_titulo,
+    .dispositivos_titulo {
+        font-size: 28px;
+    }
+
+    .container_descricao {
+        padding: 1em 0;
+    }
+
+    .dispositivos_lista {
+        flex-wrap: wrap;
+        gap: 1.5em;
+        margin: 2em 0;
+        padding: 0;
+    }
+
+    .rodape_lista {
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    .rodape_texto {
+        margin: 2em 1em;
     }
 }
 

@@ -1,4 +1,4 @@
-:root { 
+:root {
     --branco-principal: #FFFFFF;
     --cinza-secundario: #C0C0C0;
     --botao-azul: #167bf7;
@@ -7,110 +7,8 @@
     --botao-azul-efeito:#3c92fa;
 }
 
-@media screen and (max-width: 768px) {
-
-    .principal {
-        height: auto;
-        padding: 2em 1.5em;
-    }
-
-    .container {
-        grid-template-columns: 1fr;
-        height: auto;
-        text-align: center;
-        padding: 2em 1.5em;
-        box-sizing: border-box;
-    }
-
-    .container_titulo {
-        font-size: 24px;
-    }
-
-    .container_caixa {
-        margin: 0;
-    }
-
-    .container_botao {
-        width: 100%;
-        box-sizing: border-box;
-        text-align: center;
-        margin-bottom: 1em;
-    }
-
-    .container_imagem {
-        width: 100%;
-        height: auto;
-    }
-
-    .secundario {
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .secundario_imagem {
-        width: 80%;
-        max-width: 320px;
-    }
-
-    .descricao_titulo,
-    .dispositivos_titulo {
-        font-size: 28px;
-    }
-
-    .descricao_texto {
-        font-size: 14px;
-    }
-
-    .container_descricao {
-        padding: 1em 0;
-    }
-
-    .secundario_botao {
-        display: block;
-        width: 100%;
-        box-sizing: border-box;
-    }
-
-    .dispositivos_lista {
-        flex-wrap: wrap;
-        gap: 1.5em;
-        margin: 2em 0;
-        padding: 0;
-    }
-
-    .dispositivos_lista li {
-        flex: 1 1 30%;
-    }
-
-    .dispositivos_lista img {
-        max-width: 60px;
-        height: auto;
-    }
-
-    .rodape {
-        margin-bottom: 3em;
-    }
-
-    .rodape_lista {
-        flex-wrap: wrap;
-        padding: 0 1em;
-    }
-
-    .lista_link a {
-        margin: 0.5em !important;
-        font-size: 13px;
-    }
-
-    .rodape_texto {
-        margin: 1em;
-        font-size: 12px;
-    }
-}
-
 body {
-    background: linear-gradient(180deg, #000000 0%, #001529 100%); /*Este gradiente começa preto e desce para um azul marinho muito escuro.*/
+    background: linear-gradient(180deg, #000000 0%, #001529 100%);
     color: var(--branco-principal);
     font-family: var(--fonte-principal);
     font-size: 16px;
@@ -131,7 +29,6 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    /* ABAIXO: Impede que a imagem apareça fora da caixa quando ela crescer no zoom */
     overflow: hidden;
 }
 
@@ -147,35 +44,24 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-
-    /* ABAIXO: Aplica o movimento. 
-       "pulsarZoom" é o nome, 
-       "8s" é a velocidade, 
-       "ease-in-out" é a suavidade, 
-       "infinite" para não parar nunca,
-       "alternate" para ir e voltar (efeito pulsar) */
     animation: pulsarZoom 8s ease-in-out infinite alternate;
 }
 
-/* ABAIXO: O "roteiro" do movimento */
 @keyframes pulsarZoom {
     from {
-        /* Define que o movimento começa no tamanho original (1) */
         transform: scale(1);
     }
-
     to {
-        /* Define que o movimento termina com 15% de aumento (1.15) */
         transform: scale(1.15);
     }
 }
 
 .container {
     height: 100vh;
-    display:grid;
-    grid-template-columns: 50% 50%; /*item um do lado do outro */
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
-    
+
 .container_botao {
     background-color: var(--botao-azul);
     border-radius: 5px;
@@ -241,17 +127,17 @@ body {
 .dispositivos {
     text-align: center;
 }
-    
+
 .dispositivos_titulo {
     font-size: 48px;
     color: var(--branco-principal);
 }
 
 .dispositivos_lista {
-    display: flex; /*item um do lado do outro */
+    display: flex;
     justify-content: center;
     margin: 5em 0;
-    list-style-type: none; /*remove os marcadores da lista */
+    list-style-type: none;
 }
 
 .rodape {
@@ -261,7 +147,6 @@ body {
 
 .rodape_texto {
     color: var(--cinza-secundario);
-    
 }
 
 .rodape_lista {
@@ -271,7 +156,7 @@ body {
     margin-top: 2em;
 }
 
-.lista_link a{
+.lista_link a {
     color: var(--branco-secundario) !important;
     text-decoration: none !important;
     margin: 1em;
@@ -280,7 +165,7 @@ body {
 .rodape_texto {
     font-size: 14px;
     margin: 2em 15em 2em 15em;
-    color: var(--cinza-secundario)
+    color: var(--cinza-secundario);
 }
 
 .rodape_logo {
@@ -298,5 +183,118 @@ body {
 
 .container_botao:hover {
     background-color: var(--botao-azul-efeito);
-    color: var(--cor-de-fundo)
+    color: var(--cor-de-fundo);
+}
+
+@media screen and (max-width: 768px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .principal {
+        height: auto;
+        padding: 2em 1.5em;
+        box-sizing: border-box;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+        height: auto;
+        text-align: center;
+        padding: 1.5em;
+        box-sizing: border-box;
+    }
+
+    .container_caixa {
+        margin: 0;
+    }
+
+    .container_titulo {
+        font-size: 22px;
+    }
+
+    .container_imagem {
+        width: 100%;
+        height: auto;
+        margin: 1em 0;
+    }
+
+    .container_botao {
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+        margin-bottom: 0.8em;
+    }
+
+    .secundario {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .secundario_imagem {
+        width: 80%;
+        max-width: 300px;
+        margin-bottom: 1em;
+    }
+
+    .descricao_titulo,
+    .dispositivos_titulo {
+        font-size: 28px;
+    }
+
+    .descricao_texto {
+        font-size: 14px;
+    }
+
+    .container_descricao {
+        padding: 1em 0;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .secundario_botao {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .dispositivos_lista {
+        flex-wrap: wrap;
+        gap: 1em;
+        margin: 2em 0;
+        padding: 0 1em;
+        justify-content: space-around;
+    }
+
+    .dispositivos_lista li {
+        flex: 1 1 28%;
+        min-width: 80px;
+    }
+
+    .dispositivos_lista img {
+        max-width: 60px;
+        height: auto;
+    }
+
+    .rodape {
+        margin-bottom: 3em;
+    }
+
+    .rodape_lista {
+        flex-wrap: wrap;
+        padding: 0 1em;
+    }
+
+    .lista_link a {
+        margin: 0.4em !important;
+        font-size: 13px;
+    }
+
+    .rodape_texto {
+        margin: 1em;
+        font-size: 12px;
+    }
 }

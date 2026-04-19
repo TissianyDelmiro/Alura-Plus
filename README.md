@@ -3,7 +3,7 @@
 ![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=GREEN&style=for-the-badge)
 
 O **Alura Plus** é uma página de vendas (landing page) desenvolvida como parte da formação Front-end. O projeto foca na construção de uma interface moderna, responsiva e com foco total na experiência do usuário (UX).
-<img width="1920" height="4576" alt="image" src="https://github.com/user-attachments/assets/c37600f4-60ec-4aeb-a7fa-d6d8a1cb5a94" />
+https://tissianydelmiro.github.io/Alura-Plus/
 
 ---
 

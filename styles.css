@@ -186,6 +186,7 @@ body {
     color: var(--cor-de-fundo);
 }
 
+/* Estilos para telas menores (mobile) */
 @media screen and (max-width: 768px) {
 
     body {
@@ -262,21 +263,28 @@ body {
     }
 
     .dispositivos_lista {
-        flex-wrap: wrap;
-        gap: 1em;
-        margin: 2em 0;
-        padding: 0 1em;
+        display: flex;
         justify-content: space-around;
+        align-items: flex-start;
+        margin: 2em 0;
+        padding: 0 0.5em;
+        gap: 0.5em;
     }
 
     .dispositivos_lista li {
-        flex: 1 1 28%;
-        min-width: 80px;
+        flex: 1 1 0;
+        text-align: center;
+        padding: 0 0.3em;
     }
 
     .dispositivos_lista img {
-        max-width: 60px;
+        max-width: 50px;
         height: auto;
+    }
+
+    .lista_item {
+        font-size: 13px;
+        margin-top: 0.5em;
     }
 
     .rodape {

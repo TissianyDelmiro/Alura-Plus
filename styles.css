@@ -7,6 +7,35 @@
     --botao-azul-efeito:#3c92fa;
 }
 
+@media screen and (max-width: 768px) {
+
+    .principal {
+        /* Deixa a altura livre para o conteúdo crescer verticalmente */
+        height: auto;
+        /* Dá um respiro nas bordas laterais */
+        padding: 2em;
+        /* Garante que os itens fiquem um abaixo do outro */
+        flex-direction: column;
+    }
+
+    .container__titulo {
+        /* Diminui o título para não quebrar muitas linhas */
+        font-size: 28px;
+    }
+
+    .container__botao {
+        /* Faz o botão ocupar toda a largura da tela do celular */
+        width: 100%;
+        margin-bottom: 1em;
+    }
+
+    .container__imagem {
+        /* Garante que a imagem não "vaze" para fora da tela */
+        width: 100%;
+        height: auto;
+    }
+}
+
 body {
     background: linear-gradient(180deg, #000000 0%, #001529 100%); /*Este gradiente começa preto e desce para um azul marinho muito escuro.*/
     color: var(--branco-principal);

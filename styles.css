@@ -8,7 +8,7 @@
 }
 
 body {
-    background: linear-gradient(180deg, #000000 0%, #001529 100%);
+    background: linear-gradient(180deg, #000000 0%, #001529 100%); /*Este gradiente começa preto e desce para um azul marinho muito escuro.*/
     color: var(--branco-principal);
     font-family: var(--fonte-principal);
     font-size: 16px;
@@ -29,6 +29,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    /* ABAIXO: Impede que a imagem apareça fora da caixa quando ela crescer no zoom */
     overflow: hidden;
 }
 
@@ -44,14 +45,24 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
+    /* ABAIXO: Aplica o movimento.
+       "pulsarZoom" é o nome,
+       "8s" é a velocidade,
+       "ease-in-out" é a suavidade,
+       "infinite" para não parar nunca,
+       "alternate" para ir e voltar (efeito pulsar) */
     animation: pulsarZoom 8s ease-in-out infinite alternate;
 }
 
+/* ABAIXO: O "roteiro" do movimento */
 @keyframes pulsarZoom {
     from {
+        /* Define que o movimento começa no tamanho original (1) */
         transform: scale(1);
     }
     to {
+        /* Define que o movimento termina com 15% de aumento (1.15) */
         transform: scale(1.15);
     }
 }
@@ -59,7 +70,7 @@ body {
 .container {
     height: 100vh;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 50% 50%; /*item um do lado do outro */
 }
 
 .container_botao {
@@ -134,10 +145,10 @@ body {
 }
 
 .dispositivos_lista {
-    display: flex;
+    display: flex; /*item um do lado do outro */
     justify-content: center;
     margin: 5em 0;
-    list-style-type: none;
+    list-style-type: none; /*remove os marcadores da lista */
 }
 
 .rodape {

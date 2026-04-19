@@ -3,11 +3,9 @@
 ![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=GREEN&style=for-the-badge)
 
 O **Alura Plus** é uma página de vendas (landing page) desenvolvida como parte da formação Front-end. O projeto foca na construção de uma interface moderna, responsiva e com foco total na experiência do usuário (UX).
+<img width="1920" height="4576" alt="image" src="https://github.com/user-attachments/assets/c37600f4-60ec-4aeb-a7fa-d6d8a1cb5a94" />
 
 ---
-<img width="1920" height="4576" alt="image" src="https://github.com/user-attachments/assets/adaa82ed-27cb-4cd0-a416-fd41e09dc978" />
-<img width="1118" height="922" alt="image" src="https://github.com/user-attachments/assets/7071210d-0414-456d-aa76-3beba44b8cce" />
-<img width="879" height="929" alt="image" src="https://github.com/user-attachments/assets/92fd6b66-5db5-43b6-a4de-2090ed5805ff" />
 
 
 ## 📝 Descrição do Projeto

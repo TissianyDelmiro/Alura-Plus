@@ -7,7 +7,8 @@ O **Alura Plus** é uma página de vendas (landing page) desenvolvida como parte
 
 
 <img width="929" height="929" alt="image" src="https://github.com/user-attachments/assets/5047f608-e701-444c-b334-3e6eceb0f73e" />
-<img width="881" height="950" alt="image" src="https://github.com/user-attachments/assets/8c1db335-d483-4257-ae07-f10f5673079f" />
+<img width="826" height="923" alt="image" src="https://github.com/user-attachments/assets/0a601caa-b277-41fc-816a-6be157983def" />
+
 
 
 
